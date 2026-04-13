@@ -1,4 +1,4 @@
 validators
 streamlit
-langchain-openi
+langchain-openai
 langchain-community
