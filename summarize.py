@@ -7,8 +7,8 @@ from langchain_classic.chains.summarize import load_summarize_chain
 
 st.set_page_config(page_title="Summarize Text from Website")
 st.title("Summarize using Langchain")
-st.secrets("OPENAI_API_KEY")
-llm = ChatOpenAI(model="gpt-4o-mini",temperature=0)
+user_key = st.sidebar.text_input(label="Provide the api key",type='password')
+llm = ChatOpenAI(model="gpt-4o-mini",temperature=0,api_key=user_key)
 prompt_temp="""
 Provide the summary of the following content 5 lines and Print line by line with bullets:
 content:{text}
