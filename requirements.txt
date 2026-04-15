@@ -2,3 +2,4 @@ validators
 streamlit
 langchain-openai
 langchain-community
+unstructured
