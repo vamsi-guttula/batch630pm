@@ -13,7 +13,7 @@ prompt_temp="""
 Provide the summary of the following content 5 lines and Print line by line with bullets:
 content:{text}
 """
-
+####
 prompt =PromptTemplate(template=prompt_temp,input_variables=["text"])
 
 user_url = st.text_input("URL")
